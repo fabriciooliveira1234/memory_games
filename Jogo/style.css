@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: blue;
+}
+
+h1{
+  background-color: red;
+  color: yellow;
+  text-align: center;
+  font-family: 'fontpok';
+}
+
+img{
+  width: 130px;
+  height: 100px;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#tabuleiro {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.jmemoria {
+  width: calc(25% - 10px);
+  height: 20%;
+  margin: 5px;
+  position: relative;
+  backface-visibility: hidden;
+}
+
+
+.jmemoria.vira {
+  transform: rotateY(180deg);
+}
+
+.frente,
+.verso {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  background: #675a10;
+}
+
+.frente {
+  transform: rotateY(180deg);
+}
+
+@font-face {
+  font-family:'fontpok' ;
+  src: url(pokemon/PokemonHollow.ttf);
+}
+
+
+
